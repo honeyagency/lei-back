@@ -1,0 +1,41 @@
+img {
+    max-width: 100%;
+}
+
+#a11y-shortcut {
+    position: absolute;
+    top: -1000em;
+    height: auto;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    text-shadow: none;
+    text-transform: none;
+    letter-spacing: normal;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    line-height: 2.46153846;
+    border-radius: 0;
+    box-sizing: content-box;
+    transition: none;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
+
+    &:focus {
+        left: 6px;
+        top: 7px;
+        height: auto;
+        width: auto;
+        display: block;
+        font-size: 14px;
+        font-weight: 600;
+        padding: 15px 23px 14px;
+        background: #f1f1f1;
+        color: #0073aa;
+        z-index: 100000;
+        line-height: normal;
+        text-decoration: none;
+        box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    }
+}
