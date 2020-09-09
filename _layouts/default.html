@@ -5,6 +5,8 @@ layout: compress
 <html lang="en">
 	{% include head.html %}
 	<body class="{{page.style}}">
+		<a id="a11y-shortcut" href="#the-content" tabindex="1">Skip to content</a>
 		{{ content }}
 	</body>
+	{% include foot.html %}
 </html>

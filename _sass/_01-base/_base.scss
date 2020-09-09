@@ -2,6 +2,13 @@ img {
     max-width: 100%;
 }
 
+body {
+    background-image: linear-gradient($orange-light, $orange-dark);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
 #a11y-shortcut {
     position: absolute;
     top: -1000em;
@@ -31,8 +38,8 @@ img {
         font-size: 14px;
         font-weight: 600;
         padding: 15px 23px 14px;
-        background: #f1f1f1;
-        color: #0073aa;
+        background: $orange-light;
+        color: black;
         z-index: 100000;
         line-height: normal;
         text-decoration: none;

@@ -1,17 +1,17 @@
 $default-font: -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif !default;
 
 $base-serif-font: $default-font;
-$base-sans-font: $default-font;
-$heading-font-family: $default-font;
+$base-sans-font: "Roobert", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+$heading-font-family: "Adieu", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
 
 $heading-font-weight: 600;
 
-$max-wrap: 1280px;
+$max-wrap: 1045px;
 
 $base-animation: cubic-bezier(0.4, 0.01, 0.165, 0.99);
 
-$base-font-color: #024958;
-$link-color: #4aa4ff;
+$base-font-color: $green-dark;
+$link-color: $green-dark;
 $base-font-size: 1rem;
 $base-padding: 1rem;
 $base-line-height: 1.6;

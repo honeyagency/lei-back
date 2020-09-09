@@ -1,0 +1,9 @@
+.block--signup {
+    input[type="email"] {
+        border-right: 0;
+    }
+
+    input[type="submit"] {
+        border-left: 0;
+    }
+}

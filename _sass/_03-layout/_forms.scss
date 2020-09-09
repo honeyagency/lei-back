@@ -35,17 +35,17 @@ select,
 textarea,
 #{$all-text-inputs},[type="submit"] {
     font-size: $base-font-size;
-    font-family: $base-sans-font;
+    font-family: $heading-font-family;
     color: $formtextcolor;
     appearance: none;
-    border: 1px solid $formbordercolor;
+    border: 2px solid $formbordercolor;
     border-radius: 0 !important;
     box-shadow: none;
     box-sizing: border-box;
     padding: 0.3125rem 0.625rem;
     transition: color .2s ease-in-out;
     letter-spacing: 1px;
-    background: $formbackground;
+    background-color: transparent;
 
     &:focus {
         transition: color .2s ease-in-out;

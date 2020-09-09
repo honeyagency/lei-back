@@ -53,8 +53,14 @@ module.exports = function(grunt) {
             }
         },
         watch: {
-            twig: {
-                files: '**/*.twig',
+            html: {
+                files: '**/*.html',
+                options: {
+                    livereload: true,
+                },
+            },
+            markdown: {
+                files: '**/*.md',
                 options: {
                     livereload: true,
                 },
@@ -66,6 +72,13 @@ module.exports = function(grunt) {
             sass: {
                 files: ["<%= conf.sass %>"],
                 tasks: ["sass"],
+                options: {
+                    livereload: true,
+                },
+            },
+            js: {
+                files: ["<%= conf.js %>"],
+                tasks: ["uglify"],
                 options: {
                     livereload: true,
                 },
