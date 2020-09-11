@@ -1,0 +1,103 @@
+.block--image {
+    @include media($max-mdl) {
+        transform: scale(0.9);
+    }
+
+
+    @include media($max-md) {
+        transform: scale(0.8);
+    }
+
+
+    @include media($max-smd) {
+        transform: scale(0.9);
+        order: 1;
+    }
+
+
+    position: relative;
+    height: 475px;
+
+    @include media($screen-lg) {
+        left: 4rem;
+    }
+
+
+    .icon-blob {
+        position: absolute;
+        width: 475px;
+        left: 50%;
+        transform: translateX(-50%) rotate(8deg);
+    }
+
+    figure {
+        position: relative;
+        width: 475px;
+        height: 410px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        .hand {
+            width: 475px;
+            height: 410px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+
+            &.fg {
+                z-index: 4;
+
+                // filter: drop-shadow(15px 5px 10px transparentize($green-dark, 0.5));
+           
+            }
+
+            &.bg {
+                z-index: 2;
+            }
+        }
+
+        .can {
+            @include accelerate;
+
+            right: 1rem;
+            position: absolute;
+            width: 475px;
+            height: 410px;
+            z-index: 3;
+            animation-name: canimation;
+            animation-duration: 7s;
+            animation-timing-function: ease;
+            animation-delay: 0;
+            animation-iteration-count: infinite;
+            animation-fill-mode: both;
+            animation-play-state: running;
+        }
+    }
+}
+
+@keyframes canimation {
+    0% {
+        transform: translateY(-2rem) translateX(0rem) skew(-2deg);
+        filter: drop-shadow(2px 12px 10px transparentize($green-dark, 0.5));
+    }
+
+    // 25% {
+    //     transform: translateY(0rem) translateX(-0.25rem) skew(-1deg);
+    //     filter: drop-shadow(4px 8px 8px transparentize($green-dark, 0.7));
+    // }
+
+    50% {
+        transform: translateY(2rem) translateX(-0.5rem) skew(1deg);
+        filter: drop-shadow(2px 5px 7px transparentize($green-dark, 0.7));
+    }
+
+    // 75% {
+    //     transform: translateY(0rem) translateX(-0.25rem) skew(-1deg);
+    //     filter: drop-shadow(4px 8px 8px transparentize($green-dark, 0.7));
+    // }
+
+    100% {
+        transform: translateY(-2rem) translateX(0rem) skew(-2deg);
+        filter: drop-shadow(2px 12px 10px transparentize($green-dark, 0.5));
+    }
+}

@@ -34,7 +34,7 @@ input,
 select,
 textarea,
 #{$all-text-inputs},[type="submit"] {
-    font-size: $base-font-size;
+    font-size: 0.85rem;
     font-family: $heading-font-family;
     color: $formtextcolor;
     appearance: none;
@@ -42,10 +42,11 @@ textarea,
     border-radius: 0 !important;
     box-shadow: none;
     box-sizing: border-box;
-    padding: 0.3125rem 0.625rem;
+    padding: .83rem 0.9rem;
     transition: color .2s ease-in-out;
     letter-spacing: 1px;
     background-color: transparent;
+    text-transform: uppercase;
 
     &:focus {
         transition: color .2s ease-in-out;

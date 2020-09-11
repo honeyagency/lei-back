@@ -1,20 +1,48 @@
 footer {
     position: relative;
-    -webkit-mask-image: url("data:image/svg+xml;charset%3DUS-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%3Csvg%20width%3D%221440%22%20height%3D%22187%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M0%2039.17C158.117-9.114%20366.313-9.114%20539%2019.388%20679.572%2042.59%20852.172%2087.34%201035.938%2091.13%201213.864%2094.8%201338.325%2062.43%201440%2039.17v162.96H0V39.17z%22%20fill%3D%22%23FFEDC9%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E");
-    mask-image: url("data:image/svg+xml;charset%3DUS-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%3Csvg%20width%3D%221440%22%20height%3D%22187%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M0%2039.17C158.117-9.114%20366.313-9.114%20539%2019.388%20679.572%2042.59%20852.172%2087.34%201035.938%2091.13%201213.864%2094.8%201338.325%2062.43%201440%2039.17v162.96H0V39.17z%22%20fill%3D%22%23FFEDC9%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E");
-    -webkit-mask-repeat: no-repeat;
-    -webkit-mask-size: contain;
+    overflow: hidden;
     width: 100%;
-    min-height: 16rem;
+    bottom: -11px;
+    overflow: hidden;
 
     > section {
         position: absolute;
-        top: 50%;
+        top: 70%;
         transform: translateY(-50%);
         width: 100%;
     }
 
     a {
         border-bottom: 0;
+    }
+
+    height: 16rem;
+
+    .wave {
+        height: 16rem;
+        background: url("data:image/svg+xml;charset%3DUS-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%3Csvg%20width%3D%221440%22%20height%3D%22187%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M0%2039.17C158.117-9.114%20366.313-9.114%20539%2019.388%20679.572%2042.59%20852.172%2087.34%201035.938%2091.13%201213.864%2094.8%201338.325%2062.43%201440%2039.17v162.96H0V39.17z%22%20fill%3D%22%23FFEDC9%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E") repeat-x;
+        background-size: contain;
+        animation-name: wave;
+        animation-duration: 40s;
+        animation-timing-function: $base-animation;
+        animation-delay: 0;
+        animation-iteration-count: infinite;
+        animation-fill-mode: both;
+        animation-play-state: runnint;
+        position: absolute;
+        bottom: 0;
+        width: 6400px;
+        opacity: .8;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes wave {
+    0% {
+        margin-left: 0;
+    }
+
+    100% {
+        margin-left: -1600px;
     }
 }

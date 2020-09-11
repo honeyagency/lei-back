@@ -1,9 +1,56 @@
 .block--signup {
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+    transition: box-shadow 0.15s $base-animation;
+
+    &:focus-within {
+        box-shadow: 0 0 0 1px $green-dark;
+        transition: box-shadow 0.15s $base-animation;
+    }
+
+    @include media($screen-smd) {
+        max-width: 375px;
+    }
+
+
     input[type="email"] {
         border-right: 0;
+        flex-grow: 1;
+        position: relative;
+        z-index: 5;
+        transition: border 0.15s $base-animation;
+
+        &:focus {
+            // + input[type="submit"] {
+            //     background-color: $green-light;
+            //     transition: background-color 0.15s $base-animation, border 0.15s $base-animation;
+            // }
+       
+        }
     }
 
     input[type="submit"] {
-        border-left: 0;
+        background-color: transparent;
+        transition: background-color 0.15s $base-animation, border 0.15s $base-animation;
+        border-left: 2px dashed transparent;
+        background-size: 35px 26px;
+        background-position: center;
+        width: 4rem;
+        flex-basis: 4rem;
+        position: relative;
+        z-index: 2;
+        left: -2px;
+        margin-right: -2px;
+
+        &:hover {
+            background-color: $green-light;
+            transition: background-color 0.15s $base-animation, border 0.15s $base-animation;
+        }
+
+        &:focus {
+            transition: background-color 0.15s $base-animation, border 0.15s $base-animation;
+            border: 2px dashed $green-dark;
+            background-color: $green-light;
+        }
     }
 }
