@@ -76,58 +76,44 @@
             animation-iteration-count: infinite;
             animation-fill-mode: both;
             animation-play-state: running;
+
+            &.animate {
+                -webkit-animation-name: canimation;
+                -webkit-animation-duration: 7s;
+                -webkit-animation-timing-function: ease;
+                -webkit-animation-delay: 0;
+                -webkit-animation-iteration-count: infinite;
+                -webkit-animation-fill-mode: both;
+                -webkit-animation-play-state: running;
+            }
         }
     }
 }
 
 @keyframes canimation {
     0% {
-        transform: translateY(-2rem) translateX(0rem) skew(-2deg);
-        -webkit-transform: translateY(-2rem) translateX(0rem) skew(-2deg);
-
-        // filter: drop-shadow(2px 12px 10px transparentize($green-dark, 0.5));
-   
+        transform: translate(0rem, -2rem) skew(-2deg);
     }
 
     50% {
-        transform: translateY(2rem) translateX(-0.5rem) skew(1deg);
-        -webkit-transform: translateY(2rem) translateX(-0.5rem) skew(1deg);
-
-        // filter: drop-shadow(2px 5px 7px transparentize($green-dark, 0.7));
-   
+        transform: translate(-0.5rem, 2rem) skew(1deg);
     }
 
     100% {
-        transform: translateY(-2rem) translateX(0rem) skew(-2deg);
-        -webkit-transform: translateY(-2rem) translateX(0rem) skew(-2deg);
-
-        // filter: drop-shadow(2px 12px 10px transparentize($green-dark, 0.5));
-   
+        transform: translate(0rem, -2rem) skew(-2deg);
     }
 }
 
 @-webkit-keyframes canimation {
     0% {
-        transform: translateY(-2rem) translateX(0rem) skew(-2deg);
-        -webkit-transform: translateY(-2rem) translateX(0rem) skew(-2deg);
-
-        // filter: drop-shadow(2px 12px 10px transparentize($green-dark, 0.5));
-   
+        -webkit-transform: translate(0rem, -2rem) skew(-2deg);
     }
 
     50% {
-        transform: translateY(2rem) translateX(-0.5rem) skew(1deg);
-        -webkit-transform: translateY(2rem) translateX(-0.5rem) skew(1deg);
-
-        // filter: drop-shadow(2px 5px 7px transparentize($green-dark, 0.7));
-   
+        -webkit-transform: translate(-0.5rem, 2rem) skew(1deg);
     }
 
     100% {
-        transform: translateY(-2rem) translateX(0rem) skew(-2deg);
-        -webkit-transform: translateY(-2rem) translateX(0rem) skew(-2deg);
-
-        // filter: drop-shadow(2px 12px 10px transparentize($green-dark, 0.5));
-   
+        -webkit-transform: translate(0rem, -2rem) skew(-2deg);
     }
 }
