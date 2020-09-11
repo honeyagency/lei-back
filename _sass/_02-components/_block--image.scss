@@ -1,4 +1,6 @@
 .block--image {
+    transition: transform 0.3s $base-animation;
+
     @include media($max-mdl) {
         transform: scale(0.9);
     }
@@ -12,6 +14,11 @@
     @include media($max-smd) {
         transform: scale(0.9);
         order: 1;
+    }
+
+
+    @include media($max-sm) {
+        transform: scale(0.7);
     }
 
 
