@@ -19,6 +19,7 @@
         position: relative;
         z-index: 5;
         transition: border 0.15s $base-animation;
+        box-shadow: none;
 
         &:focus {
             // + input[type="submit"] {
