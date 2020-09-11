@@ -88,16 +88,22 @@
 @keyframes canimation {
     0% {
         transform: translateY(-2rem) translateX(0rem) skew(-2deg);
+        -webkit-transform: translateY(-2rem) translateX(0rem) skew(-2deg);
+        -moz-transform: translateY(-2rem) translateX(0rem) skew(-2deg);
         filter: drop-shadow(2px 12px 10px transparentize($green-dark, 0.5));
     }
 
     50% {
         transform: translateY(2rem) translateX(-0.5rem) skew(1deg);
+        -webkit-transform: translateY(-2rem) translateX(0rem) skew(-2deg);
+        -moz-transform: translateY(-2rem) translateX(0rem) skew(-2deg);
         filter: drop-shadow(2px 5px 7px transparentize($green-dark, 0.7));
     }
 
     100% {
         transform: translateY(-2rem) translateX(0rem) skew(-2deg);
+        -webkit-transform: translateY(-2rem) translateX(0rem) skew(-2deg);
+        -moz-transform: translateY(-2rem) translateX(0rem) skew(-2deg);
         filter: drop-shadow(2px 12px 10px transparentize($green-dark, 0.5));
     }
 }
