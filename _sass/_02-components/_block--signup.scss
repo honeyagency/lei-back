@@ -32,7 +32,7 @@
     input[type="submit"] {
         background-color: transparent;
         transition: background-color 0.15s $base-animation, border 0.15s $base-animation;
-        border-left: 2px dashed transparent;
+        border-left: 2px solid transparent;
         background-size: 35px 26px;
         background-position: center;
         width: 4rem;
@@ -49,8 +49,12 @@
 
         &:focus {
             transition: background-color 0.15s $base-animation, border 0.15s $base-animation;
-            border: 2px dashed $green-dark;
+            border: 2px solid $green-dark;
             background-color: $green-light;
         }
+    }
+
+    + p {
+        font-size: .9rem;
     }
 }
