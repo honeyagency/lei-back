@@ -18,6 +18,8 @@
 
 
     @include media($max-sm) {
+        margin-top: -3rem;
+        margin-bottom: -3rem;
         transform: scale(0.7);
     }
 
