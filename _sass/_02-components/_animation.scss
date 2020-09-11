@@ -1,0 +1,29 @@
+@keyframes slideUpFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(0.5rem) skewY(-1deg);
+    }
+
+    75% {
+        transform: none;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes slideUpFadeIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(0.5rem) skewY(-1deg);
+    }
+
+    75% {
+        -webkit-transform: none;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

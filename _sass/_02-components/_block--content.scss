@@ -2,4 +2,45 @@
     @include media($max-smd) {
         order: 2;
     }
+
+
+    > * {
+        animation-name: slideUpFadeIn;
+        animation-duration: 1s;
+        animation-timing-function: $base-animation;
+        animation-iteration-count: 1;
+        animation-fill-mode: both;
+        animation-play-state: running;
+        -webkit-animation-name: slideUpFadeIn;
+        -webkit-animation-duration: 1s;
+        -webkit-animation-timing-function: $base-animation;
+        -webkit-animation-iteration-count: 1;
+        -webkit-animation-fill-mode: both;
+        -webkit-animation-play-state: running;
+
+        &:nth-of-type(2) {
+            animation-delay: .2s;
+            -webkit-animation-delay: .2s;
+        }
+
+        &:nth-of-type(3) {
+            animation-delay: .3s;
+            -webkit-animation-delay: .3s;
+        }
+
+        &:nth-of-type(4) {
+            animation-delay: .4s;
+            -webkit-animation-delay: .4s;
+        }
+
+        &:nth-of-type(5) {
+            animation-delay: .5s;
+            -webkit-animation-delay: .5s;
+        }
+
+        &:nth-of-type(6) {
+            animation-delay: .6s;
+            -webkit-animation-delay: .6s;
+        }
+    }
 }

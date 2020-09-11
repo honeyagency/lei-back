@@ -76,8 +76,10 @@
             animation-iteration-count: infinite;
             animation-fill-mode: both;
             animation-play-state: running;
+            animation-delay: 1s;
 
             &.animate {
+                -webkit-animation-delay: 1s;
                 -webkit-animation-name: canimation;
                 -webkit-animation-duration: 7s;
                 -webkit-animation-timing-function: ease;
