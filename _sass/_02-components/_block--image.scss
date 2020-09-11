@@ -55,9 +55,6 @@
 
             &.fg {
                 z-index: 4;
-
-                // filter: drop-shadow(15px 5px 10px transparentize($green-dark, 0.5));
-           
             }
 
             &.bg {
@@ -68,7 +65,7 @@
         .can {
             @include accelerate;
 
-            will-change: transform,filter;
+            // will-change: transform,filter;
             right: 1rem;
             position: absolute;
             width: 475px;
@@ -89,18 +86,24 @@
     0% {
         transform: translateY(-2rem) translateX(0rem) skew(-2deg);
         -webkit-transform: translateY(-2rem) translateX(0rem) skew(-2deg);
-        filter: drop-shadow(2px 12px 10px transparentize($green-dark, 0.5));
+
+        // filter: drop-shadow(2px 12px 10px transparentize($green-dark, 0.5));
+   
     }
 
     50% {
         transform: translateY(2rem) translateX(-0.5rem) skew(1deg);
         -webkit-transform: translateY(2rem) translateX(-0.5rem) skew(1deg);
-        filter: drop-shadow(2px 5px 7px transparentize($green-dark, 0.7));
+
+        // filter: drop-shadow(2px 5px 7px transparentize($green-dark, 0.7));
+   
     }
 
     100% {
         transform: translateY(-2rem) translateX(0rem) skew(-2deg);
         -webkit-transform: translateY(-2rem) translateX(0rem) skew(-2deg);
-        filter: drop-shadow(2px 12px 10px transparentize($green-dark, 0.5));
+
+        // filter: drop-shadow(2px 12px 10px transparentize($green-dark, 0.5));
+   
     }
 }
