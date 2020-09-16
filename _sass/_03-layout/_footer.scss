@@ -1,26 +1,39 @@
 footer {
     position: relative;
-    overflow: hidden;
     width: 100%;
-    bottom: -11px;
-    overflow: hidden;
+    bottom: 0;
+    margin-top: 105px;
+
+    @include media($screen-smd) {
+        margin-top: 0;
+        overflow: hidden;
+        height: 235px;
+    }
+
 
     > section {
-        position: absolute;
-        top: 70%;
-        transform: translateY(-50%);
-        width: 100%;
+        z-index: 99;
+
+        @include media($screen-smd) {
+            position: absolute;
+            top: 70%;
+            transform: translateY(-50%) translateX(-50%);
+            left: 50%;
+        }
     }
 
     a {
         border-bottom: 0;
     }
 
-    height: 16rem;
+    @include media($max-smd) {
+        background-color: $yellow;
+    }
+
 
     .wave {
-        height: 185px;
-        background: url("data:image/svg+xml;charset%3DUS-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%3Csvg%20width%3D%221440%22%20height%3D%22187%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M0%2039.17C158.117-9.114%20366.313-9.114%20539%2019.388%20679.572%2042.59%20852.172%2087.34%201035.938%2091.13%201213.864%2094.8%201338.325%2062.43%201440%2039.17v162.96H0V39.17z%22%20fill%3D%22%23FFEDC9%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E") repeat-x;
+        z-index: 1;
+        background: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20id%3D%22b04eca0b-5383-4c30-ac84-23fb3843869e%22%20data-name%3D%22Layer%201%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%201440%20313.59%22%3E%3Cdefs%3E%3Cstyle%3E.a801c6d9-34ad-42d6-be70-50e188276cc7%7Bfill%3A%23ffedc9%3Bfill-rule%3Aevenodd%7D%3C/style%3E%3C/defs%3E%3Cg%20id%3D%22fb2499d9-e035-495f-8ce4-f0c9a2a60144%22%20data-name%3D%22Page-1%22%3E%3Cg%20id%3D%22f410f7d7-00d4-4d41-b4f4-48fd667d51e4%22%20data-name%3D%22Landing-Page%20v2%22%3E%3Cpath%20id%3D%22a4d3fe0c-6527-4cd1-82f4-cf01ec34e01d%22%20data-name%3D%22Wave-Shape-Copy-2%22%20class%3D%22a801c6d9-34ad-42d6-be70-50e188276cc7%22%20d%3D%22M0%2040.76C203.45-12.36%20366.31-7.53%20539%2021c140.57%2023.2%20313.17%2068%20496.94%2071.74%20177.92%203.67%20300.86-25.79%20404.06-52v272.85H0z%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") repeat-x;
         background-size: 100%;
         background-repeat: repeat-x;
         animation-name: wave;
@@ -34,6 +47,13 @@ footer {
         bottom: 0;
         width: 100%;
         opacity: 1;
+        height: 105px;
+        top: -105px;
+
+        @include media($screen-smd) {
+            height: 235px;
+            top: unset;
+        }
     }
 }
 
