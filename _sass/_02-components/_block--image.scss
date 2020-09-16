@@ -75,7 +75,7 @@
             animation-delay: 0;
             animation-iteration-count: infinite;
             animation-fill-mode: both;
-            animation-play-state: running;
+            animation-play-state: paused;
             animation-delay: 1s;
 
             &.animate {
@@ -86,7 +86,15 @@
                 -webkit-animation-delay: 0;
                 -webkit-animation-iteration-count: infinite;
                 -webkit-animation-fill-mode: both;
-                -webkit-animation-play-state: running;
+                -webkit-animation-play-state: paused;
+            }
+
+            &.running {
+                animation-play-state: running;
+
+                &.animate {
+                    -webkit-animation-play-state: running;
+                }
             }
         }
     }
