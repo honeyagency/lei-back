@@ -24,7 +24,7 @@ email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   For the days you re just looking for a moment. Founded in California by a restaurateur and a beverage industry expert, Lei Back is refreshing, delicious, and tastes like a sunny day at the beach. 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://drinkleiback.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 instagram_username: drinkleiback
 instagram_prepend: Follow us
