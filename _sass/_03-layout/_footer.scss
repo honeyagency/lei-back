@@ -70,13 +70,13 @@ footer {
 
     @include media(min-height 800px) {
         @include media($screen-smd) {
-            position: absolute;
+            // position: absolute;
         }
     }
 }
 
 main {
-    margin-bottom: 12.5rem;
+    margin-bottom: 17.5rem;
 
     @include media($max-mdl) {
         margin-bottom: 98px;
