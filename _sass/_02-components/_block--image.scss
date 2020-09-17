@@ -1,18 +1,28 @@
 .block--image {
     transition: transform 0.3s $base-animation;
+    transform: scale(0.5);
 
-    @include media($max-mdl) {
+    @include media($screen-xs) {
+        transform: scale(0.7);
+    }
+
+
+    @include media($screen-sm) {
         transform: scale(0.9);
     }
 
 
-    @include media($max-md) {
+    @include media($screen-smd) {
         transform: scale(0.8);
     }
 
 
-    @include media($max-smd) {
+    @include media($screen-md) {
         transform: scale(0.9);
+    }
+
+
+    @include media($max-smd) {
         order: 1;
     }
 
@@ -20,7 +30,6 @@
     @include media($max-sm) {
         margin-top: -3rem;
         margin-bottom: -3rem;
-        transform: scale(0.7);
     }
 
 

@@ -15,7 +15,8 @@
 
     input[type="email"] {
         border-right: 0;
-        flex-grow: 1;
+        flex-basis: calc(100% - 4rem);
+        width: calc(100% - 4rem);
         position: relative;
         z-index: 5;
         transition: border 0.15s $base-animation;

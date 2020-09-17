@@ -42,7 +42,6 @@ footer {
     .wave {
         z-index: 1;
         background: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20id%3D%22acc44b38-ec3b-4584-8bf0-3e708d855921%22%20data-name%3D%22b04eca0b-5383-4c30-ac84-23fb3843869e%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20918.4%20200%22%3E%3Cdefs%3E%3Cstyle%3E.b99c7907-9b37-479c-bd66-ac92232594de%7Bfill%3A%23ffedc9%3Bfill-rule%3Aevenodd%7D%3C/style%3E%3C/defs%3E%3Cg%20id%3D%22acdab9cc-a793-4ed3-a0d2-27bacdbba636%22%20data-name%3D%22fb2499d9-e035-495f-8ce4-f0c9a2a60144%22%3E%3Cg%20id%3D%22a65bb4d7-d960-4b32-907a-9cd8bb100513%22%20data-name%3D%22f410f7d7-00d4-4d41-b4f4-48fd667d51e4%22%3E%3Cpath%20id%3D%22a8e4167b-46b0-44f4-86a3-2efa618e9fb9%22%20data-name%3D%22a4d3fe0c-6527-4cd1-82f4-cf01ec34e01d%22%20class%3D%22b99c7907-9b37-479c-bd66-ac92232594de%22%20d%3D%22M0%2026C129.76-7.88%20233.62-4.8%20343.76%2013.39c89.66%2014.8%20199.74%2043.37%20316.94%2045.76C774.17%2061.49%20852.58%2042.71%20918.4%2026v174H0z%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") repeat-x;
-        background-size: 100%;
 
         // background-repeat: repeat-x;
         animation-name: wave;
@@ -54,16 +53,39 @@ footer {
         animation-play-state: running;
         position: absolute;
         bottom: 0;
-        width: 104%;
+        width: 100%;
         opacity: 1;
-        height: 80px;
-        top: -80px;
+        height: 72px;
+        top: -69px;
+        background-size: calc(100vw + 3px);
 
-        // top: -100%;
+        @include media($screen-xs) {
+            background-size: calc(100vw + 1px);
+            height: 80px;
+            top: -80px;
+        }
+
+
+        @include media($screen-xsm) {}
+
+
+        @include media($screen-sm) {}
+
+
+        @include media($screen-smd) {}
+
 
         @include media($screen-md) {
             height: 12.5rem;
             top: -12.5rem;
+        }
+
+
+        @include media($screen-mdl) {}
+
+
+        @include media($screen-lg) {
+            // background-size: 97.5vw;
         }
     }
 
@@ -77,7 +99,7 @@ footer {
 main {
     margin-bottom: 17.5rem;
 
-    @include media($max-mdl) {
+    @include media($max-md) {
         margin-bottom: 98px;
     }
 }
